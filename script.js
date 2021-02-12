@@ -1,4 +1,12 @@
 app = angular.module("app", ["summernote"]);
+app.filter("trustAsHtml", [
+  "$sce",
+  function ($sce) {
+    return function (text) {
+      return $sce.trustAsHtml(text);
+    };
+  },
+]);
 app.controller("summerNoteController", function($scope) {
   $scope.options = {
     height: 300,
