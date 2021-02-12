@@ -1,0 +1,1 @@
+A summernote plunker example with angularjs directive
