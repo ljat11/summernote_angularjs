@@ -1,1 +1,1 @@
-A summernote plunker example with angularjs directive
+Prueba summernote con angularjs
