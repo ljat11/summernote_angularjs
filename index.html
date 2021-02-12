@@ -22,12 +22,13 @@
   <body ng-controller="summerNoteController">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" >
            <summernote config="options" ng-model="text"></summernote>
         </div>
-        <div class="col-md-6 col-md-offset-3">
-          <br><br>
-           <p> {{text}} </p>
+        <div class="col-md-6 col-md-offset-3" >
+          
+           
+           <div ng-bind-html="text|trustAsHtml"></div>
         </div>
       </div>
     </div>
